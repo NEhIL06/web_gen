@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 252 100% 69%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.glass-panel {
+  @apply backdrop-blur-lg bg-black/30 border border-white/10;
+}
+
+.editor-wrapper {
+  @apply h-full w-full overflow-hidden rounded-lg;
+}
+
+.monaco-editor {
+  @apply h-full w-full;
+}
+
+.file-explorer {
+  @apply w-64 bg-editor-background text-editor-foreground;
+}
+
+.workspace-tabs {
+  @apply flex gap-2 p-2 bg-editor-background;
+}
+
+.workspace-tab {
+  @apply px-4 py-2 rounded-md transition-colors;
+}
+
+.workspace-tab.active {
+  @apply bg-secondary text-white;
+}
