@@ -1,8 +1,8 @@
-###Web_Gen
-# Bolt - Modern Web Development Platform
+
+# Web_Gen - Modern Web Development Platform
 
 ## 🚀 Overview
-Bolt is a modern, full-stack web development platform built with cutting-edge technologies. It provides a robust foundation for building scalable and maintainable web applications with a beautiful user interface and powerful backend capabilities.
+Web_gen is a modern, full-stack web development platform built with cutting-edge technologies.An Attempt to create a fullstack website generator using Open_Source and unpaid tools.Designed to build responsive websites while keeping the codes clean and resusable.
 
 ## 🛠️ Tech Stack
 
@@ -29,7 +29,6 @@ Bolt is a modern, full-stack web development platform built with cutting-edge te
 - **Runtime**: Node.js with TypeScript
 - **Server Framework**: Express.js
 - **AI Integration**: 
-  - Anthropic AI SDK
   - Google Generative AI
 - **Environment Management**: dotenv
 - **CORS Support**: Built-in CORS middleware
@@ -92,8 +91,5 @@ npm run build
 - `npm run dev` - Start development server with TypeScript compilation
 - `npm run start` - Build and start production server
 
-## 📝 License
-ISC License
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+
